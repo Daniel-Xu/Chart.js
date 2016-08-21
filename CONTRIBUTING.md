@@ -1,64 +1,60 @@
-Contributing to Chart.js
-========================
+# How to contribute
 
-Contributions to Chart.js are welcome and encouraged, but please have a look through the guidelines in this document before raising an issue, or writing code for the project.
+## Improve documentation
 
+We are always looking to improve our documentation. If at some moment you are
+reading the documentation and something is not clear, or you can't find what you
+are looking for, then please open an issue with the repository. This gives us a
+chance to answer your question and to improve the documentation if needed.
 
-Using issues
-------------
+Pull requests correcting spelling or grammar mistakes are always welcome.
 
-The [issue tracker](https://github.com/chartjs/Chart.js/issues) is the preferred channel for reporting bugs, requesting new features and submitting pull requests.
+## Found a bug?
 
-If you're suggesting a new chart type, please take a look at [writing new chart types](https://github.com/chartjs/Chart.js/blob/master/docs/07-Advanced.md#writing-new-chart-types) in the documentation or consider [creating a plugin](https://github.com/chartjs/Chart.js/blob/master/docs/07-Advanced.md#creating-plugins).
+Please try to answer at least the following questions when reporting a bug:
 
-To keep the library lightweight for everyone, it's unlikely we'll add many more chart types to the core of Chart.js, but issues are a good medium to design and spec out how new chart types could work and look.
+ - Which version of the project did you use when you noticed the bug?
+ - How do you reproduce the error condition?
+ - What happened that you think is a bug?
+ - What should it do instead?
 
-Please do not use issues for support requests. For help using Chart.js, please take a look at the [`chartjs`](http://stackoverflow.com/questions/tagged/chartjs) tag on Stack Overflow.
+It would really help the maintainers if you could provide a reduced test case
+that reproduces the error condition.
 
+## Have a feature request?
 
-Reporting bugs
---------------
+Please provide some thoughful commentary and code samples on what this feature
+should do and why it should be added (your use case). The minimal questions you
+should answer when submitting a feature request should be:
 
-Well structured, detailed bug reports are hugely valuable for the project.
+ - What will it allow you to do that you can't do today?
+ - Why do you need this feature and how will it benefit other users?
+ - Are there any drawbacks to this feature?
 
-Guidlines for reporting bugs:
+## Submitting a pull-request?
 
- - Check the issue search to see if it has already been reported
- - Isolate the problem to a simple test case
- - Provide a demonstration of the problem on [JS Bin](http://jsbin.com) or similar
+Here are some things that will increase the chance that your pull-request will
+get accepted:
+ - Did you confirm this fix/feature is something that is needed?
+ - Did you write tests, preferably in a test driven style?
+ - Did you add documentation for the changes you made?
+ - Did you follow our [styleguide](https://github.com/dockyard/styleguides)?
 
-Please provide any additional details associated with the bug, if it's browser or screen density specific, or only happens with a certain configuration or data.
+If your pull-request addresses an issue then please add the corresponding
+issue's number to the description of your pull-request.
 
+# How to work with this project locally
 
-Local development
------------------
+## Installation
 
-Run `npm install` to install all the libraries, then run `gulp dev --test` to build and run tests as you make changes.
+First clone this repository:
 
+```sh
+git clone https://github.com/DockYard/Chart.js.git
+```
 
-Pull requests
--------------
+<!-- Add further details on how to install the project here -->
 
-Clear, concise pull requests are excellent at continuing the project's community driven growth. But please review [these guidelines](https://github.com/blog/1943-how-to-write-the-perfect-pull-request) and the guidelines below before starting work on the project.
+## Running tests
 
-Be advised that **Chart.js 1.0.2 is in feature-complete status**. Pull requests adding new features to the 1.x branch will be disregarded.
-
-Guidelines:
-
- - Please create an issue first:
-   - For bugs, we can discuss the fixing approach
-   - For enhancements, we can discuss if it is within the project scope and avoid duplicate effort
- - Please make changes to the files in [`/src`](https://github.com/chartjs/Chart.js/tree/master/src), not `Chart.js` or `Chart.min.js` in the repo root directory, this avoids merge conflicts
- - Tabs for indentation, not spaces please
- - If adding new functionality, please also update the relevant `.md` file in [`/docs`](https://github.com/chartjs/Chart.js/tree/master/docs)
- - Please make your commits in logical sections with clear commit messages
-
-Joining the project
--------------
- - Active committers and contributors are invited to introduce yourself and request commit access to this project.  Please send an email to hello@nickdownie.com or file an issue.
- - We have a very active Slack community that you can join at https://chartjs-slack-automation.herokuapp.com. If you think you can help, we'd love to have you!
-
-License
--------
-
-By contributing your code, you agree to license your contribution under the [MIT license](https://github.com/chartjs/Chart.js/blob/master/LICENSE.md).
+<!-- Tell the user how to run the tests of your project -->
